@@ -1,0 +1,8 @@
+ul>li:hover{
+    background-color: #ebeaea !important ;
+}
+li{
+    box-shadow: 2px 2px 2px 3px black !important; 
+    margin-bottom: 1vh;
+    
+}

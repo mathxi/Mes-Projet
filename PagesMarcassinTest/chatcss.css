@@ -1,0 +1,103 @@
+body{
+    overflow:hidden;
+}
+.header{
+    margin:10px;
+    padding: 80px;
+    background: #aaa;
+    position:relative;
+}
+
+.chat{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 0px;
+    height: 740px;
+    width: 350px;
+    background: #bbb;
+    position:absolute;
+}
+
+.chatroom{
+    margin-left: 384px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 740px;
+    width: 1525px;
+    background: #ddd;
+    position:absolute;
+}
+
+.btn-info{
+    position: absolute;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.modal-header{
+    background-color:#2f438d;
+}
+/* Modif Mathieu */
+.chat{
+    background-color: grey;
+    overflow: auto ;
+    
+    
+    
+}
+li{
+    background-color: #524e4e;
+    border: solid black 1px;
+    width: 90%;
+    height: 130px;
+    margin-bottom:  10px;
+    
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    box-shadow: 1px 1px 1px 2px white ;
+    
+    
+
+    
+    
+    
+    
+}
+.ChatWindows{
+    margin: 0px;
+    padding: 0px;
+    
+    
+    
+    
+}
+.ChatWindows>li>a{
+    text-decoration: none;
+    color: #fbf7f7;
+    text-shadow:1px 1px 1px #392b2b; 
+    
+    
+    
+}
+
+.ChatWindows>li:hover{
+    background-color: #392b2b;
+    border: solid black 1px;
+    width: 95%;
+    height: 130px;
+    margin-bottom:  10px;
+    display: block;
+    box-shadow: 3px 2px 2px 1px white ;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    transition: all ease 0.3s;
+ 
+    
+    
+    
+}

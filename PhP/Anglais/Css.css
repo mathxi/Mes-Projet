@@ -1,0 +1,24 @@
+html{
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    color:white;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color:white;
+    display:inline-block;
+}
+nav>ul>li{
+    list-style: none;
+}
+header{
+    margin: 0;
+    background-color: rgb(65, 4, 65);
+    background-image: url("assets/motifs-bas-droite.png"); 
+    display:inline-block;
+}
+nav>img{
+   font-size: 80%;
+}

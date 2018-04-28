@@ -1,0 +1,15 @@
+body{
+    padding-top: 10vh;
+    background-color: rgb(108,109,105);
+    color: white;
+}
+#navbar{
+    top:0;
+    position: fixed;
+    background-color: #7b8081;
+    
+    
+}
+.page-footer{
+    background-color: #7b8081;
+}

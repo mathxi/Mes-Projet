@@ -1,0 +1,168 @@
+body{
+    overflow:hidden;
+
+
+}
+.header{
+    margin:0px;
+    padding: 80px;
+    background: #9BA6A5;
+    position:relative;
+}
+
+
+
+.chatroom{
+    margin-left: 384px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    height: 740px;
+    width: 1500px;
+    background:#ececd5;
+    position:fixed;
+}
+
+.btn-info{
+    position: absolute;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.modal-header{
+    background-color:#2f438d;
+}
+
+
+
+
+
+/* ----------------Modif Mathieu---------------- */
+
+
+
+
+
+body{
+    font-family: 'Bellefair', serif;
+    background-color: white; //#5d948c
+    
+}
+
+.LogMessage{
+    background-color: #ececd5;
+    height: 91.5%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-size: 30px;
+    
+
+
+
+}
+.Avatar{
+    margin: 0px;
+    width: 5%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0px;
+
+
+}
+.chat{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    height: 740px;
+    width: 350px;
+    background:#ececd5;
+    position:absolute;
+    overflow-y: scroll;
+
+}
+.EnvoieMessageTexte{
+    width: 90%;
+    height: 85%;
+    overflow: scroll;
+    font-size: 40px;
+    float: left;
+    z-index: 1;
+}
+.boutonEnvoie{
+    width: 10%;
+    height: 85%;
+    font-size: 40px;
+    float: left;
+    z-index: 1;
+    
+}
+
+.EnvoieMessage{
+    width: 100%;
+    height: 10%;
+    margin: 0px;
+}
+
+.ChatWindows>.Creer{
+    background-color:#AECCC6;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  5%;
+
+    
+    overflow: hidden;
+    margin-left: 0px;
+}
+.ChatWindows>.Acceuil{
+    background-color: blue;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  5%;
+
+    
+    overflow: hidden;
+    margin-left: 0px;
+}
+.ChatWindows>.rejointe{
+    background-color: #BBE9DB;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  5%;
+
+    
+    overflow: hidden;
+    margin-left: 0px;
+}
+.ChatWindows>.demandé{
+    background-color: #1694ed;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  5%;
+
+    
+    overflow: hidden;
+    margin-left: 0px;
+}
+.ChatWindows{
+    list-style: none;
+    padding-left: 5%;
+    padding-top: 5%;
+    height: fit-content;
+}
+.message{
+    
+   background-color: #BBE9DB;
+}
+
+.creator{
+    background-color: #AECCC6;
+    
+}

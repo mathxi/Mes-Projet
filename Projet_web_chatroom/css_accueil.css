@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+/*BOX*/
+.box{
+    z-index: 10;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    padding:auto;
+    margin:auto;
+    transition: all ease-in 0.6s; 
+/*    left:200px;
+    top:150px;*/
+    left: 0;
+    top: 0;
+    background-color:white;
+    /*opacity: 0.94;*/
+    border-radius:0px 5px 250px 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+.box:hover{
+    z-index: 10;
+    height: 320px;
+    width: 320px;
+    transition: all ease-out 0.6s; 
+    position: absolute;
+    padding:auto;
+    margin:auto;
+/*    left:200px;
+    top:150px;*/
+    left: 0;
+    top: 0;
+    background-color:white;
+    /*opacity: 0.94;*/
+    border-radius:0px 5px 250px 5px;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.5);
+}
+#text_co{
+    z-index: 20;
+    position: absolute;
+/*    left: 216px;
+    top: 200px;*/
+    left: 20px;
+    top: 25px;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    color: rgb(59, 57, 57);
+}
+.box:hover > #text_co{
+    color: rgb(12, 10, 10);
+    transition: all ease 0.6s; 
+}
+
+#first_name, #label-id{
+    z-index: 20;
+    position: absolute;
+/*    left: 216px;
+    top: 230px;*/
+    left: 20px;
+    top: 60px;
+    font-family: "CaviarDreams";
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+}
+
+
+#password, #label-pass{
+    z-index: 20;
+    position: absolute;
+/*    left: 216px;
+    top: 270px;*/
+    left: 20px;
+    top: 115px;
+    font-family: "CaviarDreams";
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+}
+
+#label-id{
+    top: 54px;
+}
+#label-pass{
+    top: 109px;
+}
+
+
+[required] {
+    border: 2px dotted red;
+}
+
+.button_c {
+    z-index: 20;
+    position: absolute;
+/*    left: 216px;
+    top: 380px;*/
+    left: 15px;
+    top: 185px;
+    border-radius: 4px;
+    background-color: #404040;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    font-family: "CaviarDreams";
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button_c span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button_c span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button_c:hover span {
+    padding-right: 25px;
+}
+
+.button_c:hover{
+    background-color:#22647c;
+}
+
+.button_c:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button_c:hover + #text_co{
+    color:#22647c;
+    transition: all 0.5s;
+}
+
+
+
+
+
+/*IMAGE BACKGROUND*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blurslide,
+.blurslide:after{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -200; 
+}
+
+
+.blurslide li span{ 
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: blurslideanim 25s linear infinite 0s;
+    -moz-animation: blurslideanim 25s linear infinite 0s;
+    animation: blurslideanim 25s linear infinite 0s; 
+}
+.blurslide li div { 
+    z-index: 500;
+    position: absolute;
+    bottom: 2%;
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+    color: #fff;
+    -webkit-animation: titleslideanim 25s linear infinite 0s;
+    -moz-animation: titleslideanim 25s linear infinite 0s;
+    animation: titleslideanim 25s linear infinite 0s; 
+}
+.blurslide li div h3 { 
+    font-size: 240px;
+    padding: 0 30px;
+    line-height: 120px; 
+    font-family: 'Lobster', cursive;
+    color:white;
+    text-shadow: 4px 4px 2px black;
+}
+
+
+
+.blurslide li:nth-child(1) span{ 
+    background-image: url(images/bat/img1.jpg);
+}
+.blurslide li:nth-child(2) span{ 
+    background-image: url(images/bat/img2.jpg);
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    animation-delay: 5s;
+}
+.blurslide li:nth-child(3) span{ 
+    background-image: url(images/bat/img3.jpg);
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.blurslide li:nth-child(4) span{ 
+    background-image: url(images/bat/img4.jpg);
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    animation-delay: 15s;
+}
+.blurslide li:nth-child(5) span{ 
+    background-image: url(images/bat/img5.jpg);
+    -webkit-animation-delay: 20s;
+    -moz-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+
+
+.blurslide li:nth-child(2) div { 
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    animation-delay: 5s;
+}
+.blurslide li:nth-child(3) div { 
+    animation-delay: 5s;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.blurslide li:nth-child(4) div { 
+    animation-delay: 5s;
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    animation-delay: 15s;
+}
+.blurslide li:nth-child(5) div { 
+    animation-delay: 5s;
+    -webkit-animation-delay: 20s;
+    -moz-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+
+
+/*Animation image background*/
+@-webkit-keyframes blurslideanim { 
+    0% { opacity: 0;
+        -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes blurslideanim { 
+    0% { opacity: 0;
+        -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes blurslideanim { 
+    0% { opacity: 0;
+        animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*Animer le texte Marcassin*/
+
+
+@keyframes titleslideanim { 
+	0% {
+	    opacity: 0;
+	    transform: translateX(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	19% {
+	    opacity: 0;
+            transform: translateX(-50px);
+	}
+	25% { opacity: 0 }
+	100% { opacity: 0 }
+}
+
+@-moz-keyframes titleslideanim { 
+	0% {
+	    opacity: 0;
+	    transform: translateX(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	19% {
+	    opacity: 0;
+	    transform: translateX(-50px);
+	}
+	25% { opacity: 0 }
+	100% { opacity: 0 }
+}
+
+@-webkit-keyframes titleslideanim { 
+	0% {
+	    opacity: 0;
+	    transform: translateX(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	19% {
+	    opacity: 0;
+	    transform: translateX(-50px);
+	}
+	25% { opacity: 0 }
+	100% { opacity: 0 }
+}
+
+/*Pour les browser qui n'accepte pas l'animations*/
+
+.no-cssanimations .blurslide li span{
+    opacity: 1
+}
+
+/*Animer le texte Marcassin*/
+
+@media screen and (max-width: 1140px) { 
+    .blurslide li div h3 { font-size: 100px }
+}
+@media screen and (max-width: 600px) { 
+    .blurslide li div h3 { font-size: 50px }
+}

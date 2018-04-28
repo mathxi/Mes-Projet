@@ -1,0 +1,355 @@
+body{
+    overflow:hidden;
+
+
+}
+.header{
+    margin:10px;
+    padding: 80px;
+    background: #aaa;
+    position:relative;
+}
+
+.chat{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 0px;
+    height: 740px;
+    width: 350px;
+    background: #bbb;
+    position:absolute;
+}
+
+.chatroom{
+    margin-left: 384px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 740px;
+    width: 1525px;
+    background: #ddd;
+    position:fixed;
+}
+
+.btn-info{
+    position: absolute;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.modal-header{
+    background-color:#2f438d;
+}
+
+
+
+
+
+/* ----------------Modif Mathieu---------------- */
+
+
+
+
+
+body{
+    font-family: 'Bellefair', serif;
+    background-color: #5d948c;
+    
+}
+
+
+/*--------- Fenêtre des chats ---------*/
+.chat{
+    background-color: #ececd5;
+    overflow: auto ;
+    box-shadow: 10px -5px 20px -1px black;
+    border-radius: 10px;
+    border: solid black 2px; 
+
+
+
+}
+
+
+/*--------- Style Fenêtre de quelqu'un qui l'a crée ---------*/
+.ChatWindows>.Creer{
+    background-color:#e08534;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  10px;
+
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    background-color: #e3aa85;
+    border: solid #e39779 0.5px;
+    box-shadow:  #e37a61 2px 2px 2px 2px;
+}
+.ChatWindows>.Creer:hover{
+    background-color: #e28b67;
+    border: solid #e37a61 1px;
+    width: 95%;
+    height: 130px;
+    margin-bottom:  10px;
+    display: block;
+    box-shadow: 3px 2px 2px 1px #e08534 ;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    transition: all ease 0.3s;
+}
+
+/*--------- Style Fenêtre de l'acceuil ---------*/
+.ChatWindows>.Acceuil{
+    background-color:#e08534;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  10px;
+
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    background-color: #4dc6eb;
+    border: solid #2ba4c9 0.5px;
+    box-shadow: #085e79 2px 2px 2px 2px;
+}
+.ChatWindows>.Acceuil:hover{
+    background-color: #2b9fc3;
+    border: solid #2ba4c9 1px;
+    width: 95%;
+    height: 130px;
+    margin-bottom:  10px;
+    display: block;
+    box-shadow: #085e79 2px 2px 2px 2px;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    transition: all ease 0.3s;
+}
+
+
+
+/*--------- Style Fenêtre de quelqu'un qui l'a juste rejointe ---------*/
+.ChatWindows>.rejointe{
+    background-color: #51c871;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  10px;
+
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px;
+    border: solid #39e85c 0.5px;
+    box-shadow:  #48df67 2px 2px 2px 2px;
+}
+.ChatWindows>.rejointe:hover{
+    background-color: #42da6b;
+    border: solid #48df67 1px;
+    width: 95%;
+    height: 130px;
+    margin-bottom:  10px;
+    display: block;
+    box-shadow: 3px 2px 2px 1px #51c871 ;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    transition: all ease 0.3s;
+}
+/*--------- Style Fenêtre de quelqu'un qui l'a pas encore accepté ---------*/
+.ChatWindows>.demandé{
+    background-color: #aa69a2;
+    
+    width: 90%;
+    height: 130px;
+    margin-bottom:  10px;
+
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px;
+    border: solid #e567de 0.5px;
+    box-shadow: #965092 2px 2px 2px 2px;
+}
+.ChatWindows>.demandé:hover{
+    background-color: #bf63b3;
+    border: solid #965092 1px;
+    width: 95%;
+    height: 130px;
+    margin-bottom:  10px;
+    display: block;
+    box-shadow: 3px 2px 2px 1px #aa69a2 ;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    transition: all ease 0.3s;
+}
+
+
+
+
+
+
+
+
+/*------------ Fenêtre ducentre pour le chat ------------*/
+#msgBienv{
+    width: fit-content ;
+    max-width: 500px ;
+    text-align: left;
+    
+    margin-left:600px;
+    
+}
+
+.ChatWindows{
+    margin: 0px;
+    padding: 0px;
+    
+
+
+
+
+}
+.ChatWindows>li>a{
+    text-decoration: none;
+    color: #fbf7f7;
+    text-shadow:1px 1px 1px #392b2b; 
+
+
+
+
+
+}
+
+.ChatWindows>li:hover{
+    background-color: #392b2b;
+    border: solid black 1px;
+    width: 95%;
+    height: 130px;
+    margin-bottom:  10px;
+    display: block;
+    box-shadow: 3px 2px 2px 1px white ;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px  ;
+    transition: all ease 0.3s;
+
+
+
+
+}
+.chatroom{
+    border: solid #339be6 1px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 10px -5px 30px -2px black;
+
+}
+
+
+ul>li:hover{
+    background-color: #58a799;
+    border: solid #339be6 1px;
+    list-style: none;
+    margin-bottom: 30px;
+    width: 1100px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px black;
+    transform: scale(1.03);
+    transition: all ease 0.3s;
+
+
+}
+ul>li>h4{
+    font-size: 35px ;
+}
+ul>li{
+    text-decoration: none;
+    color: #ecf7f1;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #4bc9b4;
+    border: solid #116c5d 1px;
+    box-shadow: #4e8d82 2px 2px 2px 2px;
+    
+    list-style: none;
+    margin-bottom: 30px;
+    width: 1100px;
+    height: auto;
+    border-radius: 7px;
+
+}
+
+
+/* -------- Message de celui qui est connecté -------- */
+.creator{
+    text-align: right;
+    margin-left: 270px;
+    background-color: #e3aa85;
+    border: solid #f1811d 1px;
+    box-shadow: #d4955d 2px 2px 2px 2px;
+
+
+}
+.creator:hover{
+    text-align: right;
+    margin-left: 270px;
+    background-color: #c28248;
+    border: solid #eb9c54 0.5px;
+    box-shadow:  #b8773c 2px 2px 2px 2px;
+
+}
+
+
+
+/*------------------------------------------------*/
+
+
+
+.Avatar{
+    margin: 0px;
+    width: 5%;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    padding: 0px;
+
+
+}
+
+.LogMessage{
+    background-color: #ececd5;
+    height: 660px;
+    width: 1525px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    
+
+
+
+}
+
+.EnvoieMessageTexte{
+    width: 1373px;
+    height: 78px;
+    overflow: scroll;
+    font-size: 40px;
+    float: left;
+    box-shadow: 10px -5px 20px -2px black;
+    z-index: 1;
+}
+
+.EnvoieMessage{
+    width: 150px;
+    height: 78px;
+    margin: 0px;
+    box-shadow: 10px -5px 30px -10px black;
+}
